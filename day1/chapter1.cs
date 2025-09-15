@@ -37,12 +37,16 @@ namespace FirstProgram
             Console.Write("Write");
             Console.Write("Write");
 
+          Console.WriteLine("==========================================");
+
             // 1-2
             Console.WriteLine("WriteLine");
             Console.WriteLine("WriteLine");
             Console.WriteLine("WriteLine");
             Console.WriteLine("WriteLine");
             Console.WriteLine("WriteLine");
+
+            Console.WriteLine("==========================================");
 
             // 1-3
             Console.Write("Write");
@@ -54,7 +58,8 @@ namespace FirstProgram
             Console.Write("Write");
             Console.Write("Write");
 
-           
+            Console.WriteLine("==========================================");
+
         }
     }
 }
