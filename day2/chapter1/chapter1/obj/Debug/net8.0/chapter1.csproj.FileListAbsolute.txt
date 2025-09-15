@@ -1,0 +1,15 @@
+D:\c-programming\chapter1\chapter1\bin\Debug\net8.0\chapter1.exe
+D:\c-programming\chapter1\chapter1\bin\Debug\net8.0\chapter1.deps.json
+D:\c-programming\chapter1\chapter1\bin\Debug\net8.0\chapter1.runtimeconfig.json
+D:\c-programming\chapter1\chapter1\bin\Debug\net8.0\chapter1.dll
+D:\c-programming\chapter1\chapter1\bin\Debug\net8.0\chapter1.pdb
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\chapter1.GeneratedMSBuildEditorConfig.editorconfig
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\chapter1.AssemblyInfoInputs.cache
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\chapter1.AssemblyInfo.cs
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\chapter1.csproj.CoreCompileInputs.cache
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\chapter1.sourcelink.json
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\chapter1.dll
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\refint\chapter1.dll
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\chapter1.pdb
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\chapter1.genruntimeconfig.cache
+D:\c-programming\chapter1\chapter1\obj\Debug\net8.0\ref\chapter1.dll
