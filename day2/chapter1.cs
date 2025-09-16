@@ -143,6 +143,15 @@ namespace Chapter1
    Console.WriteLine(a / b);
    Console.WriteLine(a % b);
    Console.WriteLine("==========================================");
+
+   // 2-34
+   string message = "안녕하세요";
+
+   Console.WriteLine(message + "!");
+   Console.WriteLine(message + [0]);
+   Console.WriteLine(message + [1]);
+   Console.WriteLine(message + [2]);
+   Console.WriteLine("==========================================");
   }
  }
 }
