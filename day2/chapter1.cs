@@ -152,6 +152,14 @@ namespace Chapter1
    Console.WriteLine(message + [1]);
    Console.WriteLine(message + [2]);
    Console.WriteLine("==========================================");
+
+   // 2-35
+   /*
+   String 자료형은  sizeof 연산자로 크기를 구할 수 없음
+   문자열은 다른 기본 자료형과 다르기 떄문
+   */
+   Console.WriteLine("String: " + sizeof(string));
+
   }
  }
 }
