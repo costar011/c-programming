@@ -160,6 +160,17 @@ namespace Chapter1
    */
    Console.WriteLine("String: " + sizeof(string));
 
+   Console.WriteLine("==========================================");
+
+   // 2-37
+   int output = 0;
+   output += 52;
+   output += 273;
+   output += 103;
+   Console.WriteLine(output);
+
+   Console.WriteLine("==========================================");
+
   }
  }
 }
