@@ -162,12 +162,39 @@ namespace Chapter1
 
    Console.WriteLine("==========================================");
 
+   // 2-36
+   bool one = 10 < 0;
+   bool other = 20 > 100;
+
+   Console.WriteLine(one);
+   Console.WriteLine(other);
+
+   Console.WriteLine("==========================================");
+
    // 2-37
    int output = 0;
    output += 52;
    output += 273;
    output += 103;
    Console.WriteLine(output);
+
+   Console.WriteLine("==========================================");
+
+   // 2-38
+   int output2 = 0;
+   output2 + 52;
+   output2 + 273;
+   output2 + 103;
+   Console.WriteLine(output2);
+
+   Console.WriteLine("==========================================");
+
+   // 2-39
+   // 복합 대입 연산자
+   string output3 = "Hello";
+   output3 += "World";
+   output3 += "!";
+   Console.WriteLine(output3);
 
    Console.WriteLine("==========================================");
 
