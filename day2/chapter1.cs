@@ -198,6 +198,23 @@ namespace Chapter1
 
    Console.WriteLine("==========================================");
 
+   // 2-40
+   string output4 = "Hello";
+   output4 += "World";
+   output4 += "!";
+   Console.WriteLine(output4);
+
+   Console.WriteLine("==========================================");
+
+   // 2-41
+   intnumber = 10;
+   number++;
+   Console.WriteLine(number);
+   number--;
+   Console.WriteLine(number);
+
+   Console.WriteLine("==========================================");
+
   }
  }
 }
