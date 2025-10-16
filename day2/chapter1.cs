@@ -215,6 +215,24 @@ namespace Chapter1
 
    Console.WriteLine("==========================================");
 
+   // 2-42
+   int number2 = 10;
+   Console.WriteLine(number2);
+   Console.WriteLine(number2++);
+   Console.WriteLine(number2--);
+   Console.WriteLine(number2);
+
+   Console.WriteLine("==========================================");
+
+   // 2-43
+   int number3 = 10;
+   Console.WriteLine(number3);
+   Console.WriteLine(number3); number3 += 1;
+   Console.WriteLine(number3); number3 -= 1;
+   Console.WriteLine(number3);
+
+   Console.WriteLine("==========================================");
+
   }
  }
 }
