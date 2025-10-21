@@ -17,3 +17,22 @@ Console.Write("두 번째 정수를 입력하세요: ");
 int num2 = int.Parse(Console.ReadLine());
 Console.WriteLine($"두 수의 합: {num1 + num2}");
 Console.WriteLine($"두 수의 차: {num1 - num2}");
+
+// 원의 반지름을 입력 받아 원의 둘레와 넓이를 구하는 코드를 작성하시오.
+Console.Write("원의 반지름 입력: ");
+double radius = double.Parse(Console.ReadLine());
+Console.WriteLine("원의 둘레: " + (2 * 3.14 * radius));
+Console.WriteLine("원의 넓이: " + (3.14 * radius * radius));
+
+// 사용자에게 나이를 입력 받아, 나이에 따라 “성인” 또는 “미성년자”를 출력하는 프로그램을 if else 문을 이용하여 작성하시오.
+Console.Write("나이를 입력하세요: ");
+int age = int.Parse(Console.ReadLine());
+
+if (age >= 18)
+{
+ Console.WriteLine("성인");
+}
+else
+{
+ Console.WriteLine("미성년자");
+}
