@@ -30,11 +30,11 @@ int age = int.Parse(Console.ReadLine());
 
 if (age >= 18)
 {
- Console.WriteLine("성인");
+  Console.WriteLine("성인");
 }
 else
 {
- Console.WriteLine("미성년자");
+  Console.WriteLine("미성년자");
 }
 
 
@@ -44,11 +44,11 @@ int num = int.Parse(Console.ReadLine());
 
 if (num % 3 == 0)
 {
- Console.WriteLine("3의 배수입니다.");
+  Console.WriteLine("3의 배수입니다.");
 }
 else
 {
- Console.WriteLine("3의 배수가 아닙니다.");
+  Console.WriteLine("3의 배수가 아닙니다.");
 }
 
 // 사용자에게 태어난 연도를 입력 받아 그 해의 띠를 출력하는 프로그램을 작성하시오.
@@ -56,40 +56,157 @@ Console.Write("태어난 연도: ");
 int birth = int.Parse(Console.ReadLine());
 switch (birth % 12)
 {
- case 0:
-  Console.WriteLine("원숭이 띠입니다.");
-  break;
- case 1:
-  Console.WriteLine("닭 띠입니다.");
-  break;
- case 2:
-  Console.WriteLine("개 띠입니다.");
-  break;
- case 3:
-  Console.WriteLine("돼지 띠입니다.");
-  break;
- case 4:
-  Console.WriteLine("쥐 띠입니다.");
-  break;
- case 5:
-  Console.WriteLine("소 띠입니다.");
-  break;
- case 6:
-  Console.WriteLine("호랑이 띠입니다.");
-  break;
- case 7:
-  Console.WriteLine("토끼 띠입니다.");
-  break;
- case 8:
-  Console.WriteLine("용 띠입니다.");
-  break;
- case 9:
-  Console.WriteLine("뱀 띠입니다.");
-  break;
- case 10:
-  Console.WriteLine("말 띠입니다.");
-  break;
- case 11:
-  Console.WriteLine("양 띠입니다.");
-  break;
+  case 0:
+    Console.WriteLine("원숭이 띠입니다.");
+    break;
+  case 1:
+    Console.WriteLine("닭 띠입니다.");
+    break;
+  case 2:
+    Console.WriteLine("개 띠입니다.");
+    break;
+  case 3:
+    Console.WriteLine("돼지 띠입니다.");
+    break;
+  case 4:
+    Console.WriteLine("쥐 띠입니다.");
+    break;
+  case 5:
+    Console.WriteLine("소 띠입니다.");
+    break;
+  case 6:
+    Console.WriteLine("호랑이 띠입니다.");
+    break;
+  case 7:
+    Console.WriteLine("토끼 띠입니다.");
+    break;
+  case 8:
+    Console.WriteLine("용 띠입니다.");
+    break;
+  case 9:
+    Console.WriteLine("뱀 띠입니다.");
+    break;
+  case 10:
+    Console.WriteLine("말 띠입니다.");
+    break;
+  case 11:
+    Console.WriteLine("양 띠입니다.");
+    break;
 }
+
+// 사용자에게 현재 월을 입력 받아 계절을 출력하는 프로그램을 작성하시오.
+Console.Write("현재가 몇 월인지 입력해주세요: ");
+int year = int.Parse(Console.ReadLine());
+if (3 <= year && year <= 5)
+{
+  Console.WriteLine("봄입니다.");
+}
+else if (6 <= year && year <= 8)
+{
+  Console.WriteLine("여름입니다.");
+}
+else if (9 <= year && year <= 11)
+{
+  Console.WriteLine("가을입니다.");
+}
+else
+{
+  Console.WriteLine("겨울입니다.");
+}
+
+// 논리 연산자를 사용하여 다음 중첩 조건문을 if가 한 개인 조건문으로 작성하시오.
+if (x > 10 && x < 20)
+{
+  Console.WriteLine("조건에 맞습니다.");
+}
+
+// 삼항 연산자를 활용하여 숫자 x가 짝수인지 홀수인지 출력하는 코드를 작성하시오.
+int x = 5;
+string result = (x % 2 == 0) ? "짝수" : "홀수";
+Console.WriteLine(result);
+
+
+// 다음 if 조건문으로 작성된 프로그램을 switch 조건문으로 변경하시오.
+static void Main(string[] args)
+{
+  Console.Write("학년을 입력하세요: ");
+  int level = int.Parse(Console.ReadLine());
+
+  if (level == 1)
+  {
+    Console.WriteLine("수강해야 하는 전공 학점: 12학점");
+  }
+  else if (level == 2)
+  {
+    Console.WriteLine("수강해야 하는 전공 학점: 18학점");
+  }
+  else if (level == 3)
+  {
+    Console.WriteLine("수강해야 하는 전공 학점: 10학점");
+  }
+  else if (level == 4)
+  {
+    Console.WriteLine("수강해야 하는 전공 학점: 18학점");
+  }
+}
+
+// 정답
+Console.Write("학년을 입력하세요");
+int level = int.Parse(Console.ReadLine());
+switch (level)
+{
+  case 1:
+    Console.WriteLine("수강해야 하는 전공 학점: 12학점");
+    break;
+  case 2:
+    Console.WriteLine("수강해야 하는 전공 학점: 18학점");
+    break;
+  case 3:
+    Console.WriteLine("수강해야 하는 전공 학점: 10학점");
+    break;
+  case 4:
+    Console.WriteLine("수강해야 하는 전공 학점: 18학점");
+    break;
+}
+
+// 다음 코드의 for 반복문을 while 반복문으로 바꾸시오.
+static void Main(string[] args)
+{
+  for (int i = 0; i < 10; i++)
+  {
+    Console.Write("출력");
+  }
+}
+
+// 정답
+int i = 0;
+while (i < 10)
+{
+  Console.Write("출력");
+  i++;
+}
+
+// 1부터 100까지의 숫자 중에서 짝수만 출력하는 for 반복문을 작성하시오.
+for (int i = 2; i <= 100; i += 2)
+{
+  Console.WriteLine(i);
+}
+
+// 0부터 10까지의 숫자를 출력하는 while 반복문을 작성하시오.
+int i = 0;
+while (i <= 10)
+{
+  Console.WriteLine(i);
+  i++;
+}
+
+// 1부터 10까지의 숫자 중 홀수만 출력하는 do-while 반복문을 작성하시오.
+int i = 1;
+do
+{
+  if (i % 2 != 0)
+  {
+    Console.WriteLine(i);
+  }
+  i++;
+} while (i <= 10);
