@@ -210,3 +210,63 @@ do
   }
   i++;
 } while (i <= 10);
+
+// 별 찍기
+for (int i = 0; i < 8; i++)
+{
+  for (int j = 7; j >= i; j--)
+  {
+    Console.Write(" ");
+  }
+  for (int j = 0; j < 2 * i + 1; j++)
+  {
+    Console.Write("*");
+  }
+  Console.WriteLine();
+}
+
+// 수열의 20번째 숫자를 찾으시오.
+
+string start = "1";
+
+for (int i = 0; i < 20; i++)
+{
+
+  Console.WriteLine((i + 1) + "번째: " + start);
+
+
+  string end = "";
+  char number = start[0];
+  int count = 0;
+  for (int j = 0; j < start.Length; j++)
+  {
+    if (number != start[j])
+    {
+      end = end + number + count;
+      number = start[j];
+      count = 1;
+    }
+    else
+    {
+      count++;
+    }
+  }
+  end = end + number + count;
+
+
+  start = end;
+}
+
+// static 키워드를 이용하여, Math 클래스처럼 유용한 상수나 메서드를 정의한 클래스를 작성하시오.
+class MathUtils
+{
+  public static double Pi = 3.14159;
+
+  public static double Square(double value)
+  {
+    return value * value;
+  }
+}
+
+Console.WriteLine($"Pi 값: {MathUtils.Pi}");
+Console.WriteLine($"4의 제곱: {MathUtils.Square(4)}");
