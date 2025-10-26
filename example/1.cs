@@ -270,3 +270,32 @@ class MathUtils
 
 Console.WriteLine($"Pi 값: {MathUtils.Pi}");
 Console.WriteLine($"4의 제곱: {MathUtils.Square(4)}");
+
+// 다음과 같은 변수를 가지는 클래스를 만들고, 값을 넣어 인스턴스를 생성하시오. 클래스의 이름을 Book으로 만들고, 변수의 이름과 자료형은 알맞다고 생각하는 방식으로 선언하시오.
+// img 파일
+
+class Book
+{
+  public string name;
+  public DateTime publishedDate;
+  public string author;
+  public string owner;
+  public string publisher;
+  public string seniorEditor;
+  public string producer;
+  public string editor;
+  public string designer;
+}
+
+Book book = new Book()
+{
+  name = "로키 리눅스",
+  publishedDate = new DateTime(2024, 7, 1),
+  author = "이종원",
+  owner = "전태호",
+  publisher = "한빛아카데미(주)",
+  seniorEditor = "김성무",
+  producer = "정지윤",
+  editor = "정지윤",
+  designer = "박정우"
+};
