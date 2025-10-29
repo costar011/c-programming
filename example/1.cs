@@ -299,3 +299,54 @@ Book book = new Book()
   editor = "정지윤",
   designer = "박정우"
 };
+
+// 다음과 같은 변수를 가지는 클래스를 만들고, 값을 넣어 인스턴스를 생성하시오. 클래스의 이름을 Unit으로 만들고, 변수의 이름과 자료형은 알맞다고 생각하는 방식으로 선언하시오.
+
+class Unit
+{
+  public string Name;
+  public int Mineral;
+  public int Supply;
+  public int Hp;
+  public int Attack;
+}
+
+Unit scv = new Unit()
+{
+  Name = "건설 로봇",
+  Mineral = 50,
+  Supply = 1,
+  Hp = 45,
+  Attack = 5
+};
+
+
+// 다음과 같은 변수를 가지는 클래스를 만들고, 값을 넣어 인스턴스를 생성하시오.
+// 변수의 이름과 자료형은 알맞다고 생각하는 방식으로 선언하시오. Person과 Pet이라는 클래스를 2개 만들고, 두 클래스가 연관 관계를 갖도록 하며, Pet 클래스의 인스턴스는 다음과 같이 2개로 만드시오.
+// Person 클래스의 인스턴스는 다음과 같이 1개로 만드시오.
+
+class Pet
+{
+  public string name;
+  public int age;
+}
+
+class Person
+{
+  public string name;
+  public string address;
+  public List<Pet> pets;
+}
+
+static void Main(string[] args)
+{
+  Pet cloud = new Pet() { name = "구름", age = 7 };
+  Pet star = new Pet() { name = "별", age = 1 };
+
+  Person person = new Person()
+  {
+    name = "윤인성",
+    address = "서울특별시 강서구",
+    pets = new List<Pet>() { cloud, star }
+  };
+}
