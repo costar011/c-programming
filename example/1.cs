@@ -350,3 +350,29 @@ static void Main(string[] args)
     pets = new List<Pet>() { cloud, star }
   };
 }
+
+// 다음 코드의 실행 결과를 예측하시오.
+class MyMath
+{
+  static int Abs(int input)
+  {
+    return input > 0 ? input : -input;
+  }
+
+  static double Abs(int input)
+  {
+    return input > 0 ? input : -input;
+  }
+
+  static long Abs(long input)
+  {
+    return input > 0 ? input : -input;
+  }
+
+  static double Abs(long input)
+  {
+    return input > 0 ? input : -input;
+  }
+}
+
+// 정답 : 메서드 오버로딩 오류가 발생
