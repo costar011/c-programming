@@ -106,3 +106,57 @@ class Program
         Console.WriteLine(child.variable);
     }
 }
+
+print("####################");
+
+using System;
+using System.Windows.Forms;
+
+public partial class Form1 : Form
+{
+    class CustomForm : Form
+    {
+        // Form 클래스를 상속
+    }
+
+    public Form1()
+    {
+        InitializeComponent();
+    }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+        CustomForm form = new CustomForm();
+        form.Show(); // Form 클래스를 상속받으므로 Show() 메서드를 사용할 수 있음
+    }
+}
+
+print("####################");
+
+class Program
+{
+    static void NextPosition(int x, int y, int vx, int vy, out int rx, out int ry)
+    {
+        // 다음 위치 = 현재 위치 + 현재 속도
+        rx = x + vx;
+        ry = y + vy;
+    }
+
+    static void Main(string[] args)
+    {
+        int x = 0;
+        int y = 0;
+
+        int vx = 1;
+        int vy = 1;
+
+        // 현재 좌표 출력
+        Console.WriteLine("현재 좌표: (" + x + "," + y + ")");
+        NextPosition(x, y, vx, vy, out x, out y);
+
+        // 다음 좌표 출력
+        Console.WriteLine("다음 좌표: (" + x + "," + y + ")");
+    }
+}
+
+print("####################");
