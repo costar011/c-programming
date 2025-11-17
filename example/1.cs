@@ -376,3 +376,48 @@ class MyMath
 }
 
 // 정답 : 메서드 오버로딩 오류가 발생
+
+// 다음 코드에서 예외가 발생하는 부분을 고르시오.s
+class Unit { }
+class Tank : Unit { }
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    Unit unit = new Unit();
+    Tank tank = new Tank();
+    /* 1 */
+    Unit a = (Unit)unit;
+    /* 2 */
+    Unit b = (Unit)tank;
+    /* 3 */
+    Tank c = (Tank)unit;
+    /* 4 */
+    Tank d = (Tank)tank;
+  }
+}
+// 답: 3번
+
+
+// 다음 코드는 10을 출력하는가? 20을 출력하는가?
+
+class Parent
+{
+  public int question = 10;
+}
+
+class Child : Parent
+{
+  public string question = "20";
+}
+
+// 답: 20
+
+// 위의 06번 문제에서 둘 중 출력되지 않은 값을 출력하게 하려면 코드를 어떻게 수정해야 하는가?
+Child child = new Child();
+Console.WriteLine(((Parent)child).question);
+
+// 또는
+Parent child = new Child();
+Console.WriteLine(child.question);
