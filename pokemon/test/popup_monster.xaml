@@ -1,0 +1,75 @@
+﻿<Window x:Class="test.popup_monster"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="popup_monster" Height="320" Width="400">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Border x:Name="border00" Cursor="Hand" Height="45" Margin="5" Background="LightGray" 
+                    BorderBrush="Transparent" BorderThickness="1" MouseLeftButtonDown="select00">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="No.0001" FontSize="24"/>
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="이상해씨" FontSize="25"/>
+                </Grid>
+            </Border>
+            <Border x:Name="border01" Height="45" Margin="5" Background="LightGray" 
+                    BorderBrush="Transparent" BorderThickness="1" MouseLeftButtonDown="select01">
+                <Grid Margin="10" Cursor="Hand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="No.0004" FontSize="24"/>
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="파이리" FontSize="25"/>
+                </Grid>
+            </Border>
+            <Border x:Name="border02" Height="45" Margin="5" Background="LightGray" 
+                    BorderBrush="Transparent" BorderThickness="1" MouseLeftButtonDown="select02">
+                <Grid Margin="10" Cursor="Hand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="No.0007" FontSize="24"/>
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="꼬북이" FontSize="25"/>
+                </Grid>
+            </Border>
+            <Border x:Name="border03" Height="45" Margin="5" Background="LightGray" 
+                    BorderBrush="Transparent" BorderThickness="1" MouseLeftButtonDown="select03">
+                <Grid Margin="10" Cursor="Hand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="No.0054" FontSize="24"/>
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="고라파덕" FontSize="25"/>
+                </Grid>
+            </Border>
+            <Border x:Name="border04" Height="45" Margin="5" Background="LightGray" 
+                    BorderBrush="Transparent" BorderThickness="1" MouseLeftButtonDown="select04">
+                <Grid Margin="10" Cursor="Hand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="No.0039" FontSize="24"/>
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="푸린" FontSize="25"/>
+                </Grid>
+            </Border>
+            <Border x:Name="border05" Height="45" Margin="5" Background="LightGray" 
+                    BorderBrush="Transparent" BorderThickness="1" MouseLeftButtonDown="select05">
+                <Grid Margin="10" Cursor="Hand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Text="No.0025" FontSize="24"/>
+                    <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="피카츄" FontSize="25"/>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
